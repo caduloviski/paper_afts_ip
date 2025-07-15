@@ -1,0 +1,11 @@
+# Objects and R history
+.Rhistory
+.RData
+
+# Results generated
+output/
+outputs/
+*.pdf
+*.aux
+*.log
+*.toc
