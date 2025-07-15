@@ -5,10 +5,8 @@ deps:
 
 all: output/arima_results.rds
 
-output/pi_brasil_2002_2022.csv: scripts/01_download_data.R
-	$(R) scripts/01_download_data.R
 
-output/unitroot_results.rds: scripts/02_unitroot.R output/pi_brasil_2002_2022.csv
+output/unitroot_results.rds: scripts/02_unitroot.R
 	$(R) scripts/02_unitroot.R
 
 output/arima_results.rds: scripts/03_arima_x.R output/unitroot_results.rds
